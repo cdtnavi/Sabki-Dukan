@@ -1,0 +1,78 @@
+
+
+
+HTML OF OUR SERVICES
+
+<section class="servicescon">
+      <h1 class="hprimarycenter">Our Services</h1>
+      <div id="services">
+          <div class="box">
+              <img src="images/1.webp" alt="">
+              <h2 class="hsecond">SMALL BUSINESS</h2>
+              <p class="textc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae repellendus, nemo modi
+                  ea veniam ullam.</p>
+          </div>
+          <div class="box">
+              <img src="images/2.jpg" alt="">
+              <h2 class="hsecond">LOCAL SHOPS</h2>
+              <p class="textc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae repellendus, nemo modi
+                  ea veniam ullam.</p>
+          </div>
+          <div class="box">
+              <img src="images/3.webp" alt="">
+              <h2 class="hsecond">SUPPORT TO WOMEN</h2>
+              <p class="textc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae repellendus, nemo modi
+                  ea veniam ullam.</p>
+          </div>
+      </div>
+  </section>
+
+
+CSS OF OUR SERVICES
+
+.hprimarycenter {
+	font-size: 3.8rem;
+	padding: 17px;
+	color: rgb(45, 36, 36);
+	font-family: 'Cinzel', serif;
+	text-align: center;
+}
+
+#services {
+	margin: 32px;
+	display: flex;
+}
+
+#services .box {
+	border: 2px solid red;
+	padding: 30px;
+	margin: 3px 6px;
+	border-radius: 28px;
+	background: #f5eded;
+}
+
+#services .box img {
+	height: 160px;
+	width: 210px;
+	margin: auto;
+	display: block;
+	border-radius: 23px;
+
+}
+
+.hsecond {
+	font-size: 2.8rem;
+	text-align: center;
+	justify-content: center;
+	padding: 12px;
+	color: rgb(45, 36, 36);
+	font-family: 'Cinzel', serif;
+	font-weight: bold;
+}
+
+.textc {
+	color: black;
+	text-align: center;
+	font-size: 1.12rem;
+	font-family: 'Inspiration', cursive;
+}

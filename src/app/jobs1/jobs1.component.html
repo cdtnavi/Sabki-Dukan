@@ -1,0 +1,42 @@
+<div class="login">
+    <section id="jobsid">
+    <div>
+        <h1 class="headingjobs">JOBS</h1>
+        <select class="button123" [(ngModel)] = "city" name="cbx1" >
+            <option value="">Select the city</option>
+            <option value="Jalandhar">Jalandhar</option>
+            <option value="Amritsar">Amritsar</option>
+            <option value="Ludhiana">Ludhiana</option>
+        </select>
+
+    </div>
+    <div class="testimonial">
+        <div class="card">
+            <div class="layer"></div>
+            <div class="content">
+                
+                <div class="image"><img src="https://cdn2.iconfinder.com/data/icons/avatar-2/512/oscar_boy-128.png"
+                        alt="avatar">
+                </div>
+                <div class="details">
+                    <h2>Post a job</h2> <br> <span><button class="button123"(click)="postjob()">Post here</button></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="layer"></div>
+            <div class="content">
+                
+                <div class="image"><img src="https://cdn2.iconfinder.com/data/icons/avatar-2/512/oscar_boy-128.png"
+                        alt="avatar">
+                </div>
+                <div class="details">
+                    <h2>Looking for Job?</h2> <br> <span><button class="button123" (click)="applyjob()">Apply Now</button></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+   

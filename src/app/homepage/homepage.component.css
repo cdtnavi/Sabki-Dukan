@@ -1,0 +1,121 @@
+.hprimarycenter {
+	font-size: 3.8rem;
+	padding: 17px;
+	color: rgb(45, 36, 36);
+	font-family: 'Cinzel', serif;
+	text-align: center;
+}
+
+#services {
+	margin: 32px;
+	display: flex;
+}
+
+#services .box {
+	border: 2px solid black;
+	padding: 30px;
+	margin: 3px 6px;
+	border-radius: 28px;
+	background: #f5eded;
+}
+
+#services .box img {
+	height: 160px;
+	width: 210px;
+	margin: auto;
+	display: block;
+	border-radius: 23px;
+
+}
+
+.hsecond {
+	font-size: 2.8rem;
+	text-align: center;
+	justify-content: center;
+	padding: 12px;
+	color: rgb(45, 36, 36);
+	font-family: 'Cinzel', serif;
+	font-weight: bold;
+}
+
+.textc {
+	color: black;
+	text-align: center;
+	font-size: 1.12rem;
+	font-family: 'Inspiration', cursive;
+}
+.redcolor{
+	color: red;
+	text-decoration: underline black;
+	
+}
+.text-content h2{
+	color: black;
+}
+
+
+.testimonials
+{
+  padding: 40px 0;
+  background: #f1f1f1;
+  color: #434343;
+  text-align: center;
+}
+
+.testimonial-inner
+{
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+.border
+{
+  width: 160px;
+  height: 5px;
+  background: #6ab04c;
+  margin: 26px auto;
+}
+
+.row
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.col
+{
+  flex: 33.33%;
+  max-width: 33.33%;
+  box-sizing:  border-box;
+  padding: 15px;
+}
+
+.testimonial
+{
+  background: #fff;
+  padding: 30px;
+}
+
+.testimonial img
+{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.name
+{
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+.stars
+{
+  color: #f0932b;
+  margin-bottom: 20px;
+}
+

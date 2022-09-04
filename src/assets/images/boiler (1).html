@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+
+    <style>
+        #jobsid {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background: #262626;
+            color: #fff;
+            font-family: sans-serif;
+            background-size: 100%;
+            background-position: 100%;
+        }
+.headingjobs{
+    display: block;
+    justify-content: center;
+    text-align: center;
+    font-size: 100px;
+    text-decoration: underline red;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+        .testimonial {
+
+            margin: 200px auto 100px;
+            display: grid;
+            grid-template-columns:auto auto;
+            grid-gap: 70px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .testimonial .card {
+            position: relative;
+            margin: 0 auto;
+            width: 350px;
+            background: #333;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, .5);
+            overflow: hidden;
+            margin-top: 0px;
+            
+
+        }
+
+        .testimonial .card .layer {
+            position: absolute;
+            top: calc(100% - 2px);
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(#03a9f4, #e91ee3);
+            z-index: 1;
+            transition: 0.5s;
+        }
+
+        .testimonial .card:hover .layer {
+            top: 0;
+        }
+
+        .testimonial .card .content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .testimonial .card .content p {
+            font-size: 18px;
+            line-height: 24px;
+        }
+
+        .testimonial .card .content .image {
+            width: 128px;
+            height: 128px;
+            margin: 0 auto;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 4px solid #fff;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+        }
+
+        .testimonial .card .content .details h2 {
+            font-size: 18px;
+        }
+
+        .testimonial .card .content .details span {
+            color: #03a9f4;
+            font-size: 14px;
+            transition: 0.5s;
+        }
+
+        .testimonial .card:hover .content .details span {
+            color: #fff;
+        }
+        .button123{
+            padding: 6px 20px;
+            border: 2px solid white;
+            background-color: rgb(126, 76, 76);
+            color: white;
+            margin: 17px;
+            font-size: 20px;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+        .button123:hover {
+            background-color: rgb(58, 55, 55);
+            font-size: 17px;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="jobsid">
+    <div>
+        <h1 class="headingjobs">JOBS</h1>
+    </div>
+    <div class="testimonial">
+        <div class="card">
+            <div class="layer"></div>
+            <div class="content">
+                
+                <div class="image"><img src="https://cdn2.iconfinder.com/data/icons/avatar-2/512/oscar_boy-128.png"
+                        alt="avatar">
+                </div>
+                <div class="details">
+                    <h2>Register for Jobs</h2> <br> <span><button class="button123">Register Here</button></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="layer"></div>
+            <div class="content">
+                
+                <div class="image"><img src="https://cdn2.iconfinder.com/data/icons/avatar-2/512/oscar_boy-128.png"
+                        alt="avatar">
+                </div>
+                <div class="details">
+                    <h2>Looking for Job?</h2> <br> <span><button class="button123">Apply Now</button></span>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    </div>
+    </div>
+</section>
+</body>
+
+</html>

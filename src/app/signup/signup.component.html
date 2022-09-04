@@ -1,0 +1,67 @@
+<!-- register -->
+<div class="login">
+<div class="register">
+    <div class="container"><br/><br/><br/>
+        <h2>Register Here</h2>
+        <div class="login-form-grids">
+            <h5>profile information</h5>
+            <form action="#" method="post" #signupform = "ngForm">
+                <input type="text" name="pname" #personame="ngModel" [(ngModel)]="pname" placeholder="Name of the owner" required=" " pattern="[a-zA-Z0-9\s]+">
+                <span class="input" *ngIf="personame.invalid && personame.touched && personame.errors?.['pattern']">can fill only uppercase and lowercase letters</span><br/>
+                <input type="text" name="pname" #personame="ngModel" [(ngModel)]="buisnessname" placeholder="Buisness Name" required=" " pattern="[a-zA-Z0-9\s]+">
+                <span class="input" *ngIf="personame.invalid && personame.touched && personame.errors?.['pattern']">can fill only uppercase and lowercase letters</span><br/>
+                <select name = "select1" [(ngModel)]="type">
+                    <option value="">Select the type of Buisness</option>
+                    <option value="Small Buisness">Small Buisness</option>
+                    <option value="Local Shop">Local Shop</option>
+                    <option value="Women Empowerment">SUPPORT for Women</option>
+                </select><br/><br/>
+                <input type="file" name="newfile" (change)="myfileselected($event)"><br/><br/>
+                <input type="text" name="pname" #addressname="ngModel" [(ngModel)]="address" placeholder= "Addresss" required=" " pattern="[a-zA-Z0-9\s]+">
+                <span class="input" *ngIf="addressname.invalid && addressname.touched && addressname.errors?.['pattern']">can fill only uppercase and lowercase letters</span><br/>
+                
+                <select name = "select2" [(ngModel)]="state">
+                    <option value="">Select the state</option>
+                    <option *ngFor="let x of states">{{x}}</option>
+                </select><br/><br/>
+                
+                
+                
+                
+                
+
+                <input type="text" name = "Pincode" [(ngModel)]="pin" #pinnumber="ngModel" placeholder="Enter Pincode" pattern="[1-8]{1}[0-9]{5}" required=" " >
+                <span class="input" *ngIf="pinnumber.invalid && pinnumber.touched && pinnumber.errors?.['pattern']">invalid pin code format</span><br/><br/>
+
+                <input type="text" name = "phone" [(ngModel)]="phone" #phonenumber="ngModel" placeholder="10 digit Phone Number" pattern="[6-9]{1}[0-9]{9}" required=" " >
+                <span class="input" *ngIf="phonenumber.invalid && phonenumber.touched && phonenumber.errors?.['pattern']">invalid phone format</span>
+            <div class="register-check-box">
+                <div class="check">
+                    <label class="checkbox"><input type="checkbox" name="checkbox"><i> </i>Subscribe to Newsletter</label>
+                </div>
+            </div>
+            <h6>Login information</h6>
+                <input type="email" name = "email" [(ngModel)]="emailname" #textuname="ngModel" placeholder="Email Address" required=" " pattern="^[A-za-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" >
+                <span class="input" *ngIf="textuname.invalid && textuname.touched && textuname.errors?.['required']">Email is required </span>
+                <span *ngIf="textuname.invalid && textuname.touched && textuname.errors?.['pattern']">Invalid email format</span>
+
+
+                <input type="password" name = "password" #textpassname="ngModel" [(ngModel)]="pass" placeholder="atleast 6 letters, special characters are not allowed" required=" " pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$">
+                <span class="input" *ngIf="textuname.invalid && textpassname.touched && textpassname.errors?.['required']">Password is required </span>
+                <span class="input" *ngIf="textuname.valid && textpassname.touched && textpassname.errors?.['pattern']">invalid password format (no special characters, atleast one lowerecase,uppercase letter and a number)</span>
+                <input type="password" name = "conpassword" #textpassname="ngModel"  [(ngModel)]="cpass" placeholder="Password Confirmation" required=" "  pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$" ><br/>
+                <div class="register-check-box">
+                    <div class="check">
+                        <input type="checkbox" [(ngModel)]="termscbx" name="cbx1" value><i> </i> <b> I accept the terms and conditions</b>
+                    </div>
+                </div>
+                <input type="submit" name = "button" value="Register" (click)="onsignup(signupform)"><br/>
+                
+                <!-- <input type="submit" name = "button" value="Register" (click)="onregister()"><br/> -->
+            </form>
+        </div>
+    </div>
+</div>
+</div>
+<!-- //register -->
+
